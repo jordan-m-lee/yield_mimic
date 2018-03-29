@@ -12,11 +12,11 @@ class wave:
         self.focus = focus
         self.data = data
 
-#file = 'C:/Users/Leonardo/Desktop/Yield Data/Varex/-05Unannealed/TEY/Varex -05Unannealed 850eV TEY - 01-10-2018, 14-06-12.txt';
+#file = '----';
 
 BIG = []
 np.array(BIG)
-path = 'C:/Users/Leonardo/Desktop/Yield Data/Varex/-05Unannealed/TEY'
+path = '-----'
 
 for file in os.listdir(path):
     fullname = path + "/" + file
