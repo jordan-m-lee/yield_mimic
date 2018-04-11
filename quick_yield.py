@@ -23,10 +23,10 @@ def yield_average(raw_data):
     np.array(averages)
 
     while num < (np.shape(raw_data)[0] / 4):
-        collector.append(raw_data[num])
-        sample.append(raw_data[num + 1])
-        grid.append(raw_data[num + 2])
-        stage.append(raw_data[num + 3])
+        collector.append(raw_data[num * 4])
+        sample.append(raw_data[(num * 4) + 1])
+        grid.append(raw_data[(num * 4) + 2])
+        stage.append(raw_data[(num * 4) + 3])
         num += 1
 
     for num in range(np.shape(collector)[1]):
